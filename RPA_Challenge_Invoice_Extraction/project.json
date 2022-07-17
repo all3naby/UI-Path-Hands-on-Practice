@@ -1,0 +1,58 @@
+{
+  "name": "RPA_Challenge_Invoice_Extraction",
+  "description": "Instructions\r\nThe goal of this challenge is to create a workflow that will read every table row and download the respective invoices.\r\n\r\nFrom the invoices, you will have to extract the Invoice Number, Invoice Date, Company Name and Total Due.\r\n\r\nYou will have to build and upload a CSV file with the data extracted from each invoice, the ID and Due Date from the table, only for the invoices for which the Due Date has passed or is today.\r\n\r\nThe actual countdown of the challenge will begin once you ",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.2]",
+    "UiPath.System.Activities": "[22.4.1]",
+    "UiPath.UIAutomation.Activities": "[22.4.5]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.3.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "CSharp",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "d8d91055-91c4-4602-bb3b-65fe24123337",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

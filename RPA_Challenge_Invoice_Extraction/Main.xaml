@@ -1,0 +1,212 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="860.8,1525.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="45">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="871.2,1460.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="829.6,1368" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="58334c0f-b903-416a-ad6e-df1f5ccc41d5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="796,1151.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="condition" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dtOutput" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:BuildDataTable DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="754.4,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;InvoiceNumber&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;InvoiceDate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;CompanyName&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;TotalDue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+              <ui:BuildDataTable.DataTable>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">dtOutput</mca:CSharpReference>
+                </OutArgument>
+              </ui:BuildDataTable.DataTable>
+            </ui:BuildDataTable>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="754.4,957.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="719.2,790.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State '3'" sap:VirtualizedContainerService.HintSize="677.6,697.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="58334c0f-b903-416a-ad6e-df1f5ccc41d5" Version="V1">
+                    <uix:NCheckState.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">condition</mca:CSharpReference>
+                      </OutArgument>
+                    </uix:NCheckState.Exists>
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="249.6,85.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="375.2,479.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="id" />
+                          <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
+                            <Variable.Default>
+                              <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">new System.Data.DataTable();</mca:CSharpValue>
+                            </Variable.Default>
+                          </Variable>
+                          <Variable x:TypeArguments="x:String" Name="variable1" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='0' Name='#' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ID' ReferenceIdx='1' Name='ID'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Due Date' ReferenceIdx='2' Name='Due Date' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice' ReferenceIdx='3' Name='Invoice' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='#' attr='text' /&gt;&lt;column name='ID' attr='text' /&gt;&lt;column name='Due Date' attr='text' /&gt;&lt;column name='Invoice' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" MaximumResults="0" ScopeIdentifier="58334c0f-b903-416a-ad6e-df1f5ccc41d5" Version="V1">
+                          <uix:NExtractData.DataTable>
+                            <InOutArgument x:TypeArguments="sd:DataTable">
+                              <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">ExtractDataTable</mca:CSharpReference>
+                            </InOutArgument>
+                          </uix:NExtractData.DataTable>
+                          <uix:NExtractData.NextLink>
+                            <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="1753, 730, 73, 45" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="b5a4222a-06a9-4167-9d3c-93990530f304" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAxCAYAAACf6SQKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAK8SURBVGhD7Zexa9tAFIf7P2nSYDAUDB001Us1pZsJRBBIFnvrYjyYm0InDaUU6iXIQ1AgeAg4ELSEZsoQ3MmDwWAQeBAYfn2SzqokO6V5sQMR74MD6e50sr577+78DsKzEWkMRBoDkcZApDEQaQxEGgORxkCkMRBpDEQaA5HGQKQxEGkMRBoDkcZApDHYn7Q7BcMwYB77mOuqInN4RwaMI++J9hewCvEw/ILv9/p+x+xdmmGYcC62admjtJkHh96t7vT9jnkFaVRqHYwWuj5DpG2ipanz9APM9gihbkp5QtosgHvSRD0RXkfzRMF/jHRjiFHbpHoH3kxXxSxG6NT0UpCfrKQo/NLddsX+pdFsT88dujbRucpr25QW3buw6ePrhwredYDg2oM6rNOzTRpHi5v5cGJB2SRoketoXkwQXCrY9O7THzTG7aQ0WS/nVaRhNU0FFdK0LG2KwQHJ6I4RrpIKTYRxl6QcDKhHyvzCgUmT0LuJEF51suuMN5+e6x8+LadpSRq1t6i99XVE0RFHyN/i920aK5+Sc/jHJPKjnUSm1Q9IbY7KSCOKaVqStrEWlYuJs/wRQosxGj0ES123pkrSimm6Xdr/fmh006O0TGUWUjOmUtJisjR14eal/R4ki7f9c5J0+yfLMXrxZtD14cfrXa2HcT7aKieNSNM0jpKcNL0RGJYqpVuEoG/B/EBiksVQbwzZbqmPG7SBZPFWRWlZmhakkQ56phnXvW/BvUyPHGdtO9kdnWG6d6ZpWfyXMR+ma2WWpiGJpHGs9gDjN3vk2Aal4+eStJjo0YfKDrcmGp9O4d7qHssAykqfmeaPJatJKUojPHxz0KAIjHddP/+CHbA/aRVGpDEQaQxEGgORxkCkMRBpDEQaA5HGQKQxEGkMRBoDkcZApDEQaQxEGgORxkCkMRBpzwb4AyKaV8GNwdzfAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                          </uix:NExtractData.NextLink>
+                          <uix:NExtractData.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="742, 444, 1303, 244" FriendlyName="'#IDDue DateInvoice'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="bca69031-c1e0-4438-8615-a50e8d2d41fe" InformativeScreenshot="814ac5fb6e785ea472a3ef4617981723.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                          </uix:NExtractData.Target>
+                        </uix:NExtractData>
+                        <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" ColumnName="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1">
+                          <ui:AddDataColumn.Column>
+                            <InArgument x:TypeArguments="sd:DataColumn">
+                              <mca:CSharpValue x:TypeArguments="sd:DataColumn" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">ExtractDataTable.Columns[0]</mca:CSharpValue>
+                            </InArgument>
+                          </ui:AddDataColumn.Column>
+                          <ui:AddDataColumn.DataTable>
+                            <InArgument x:TypeArguments="sd:DataTable">
+                              <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">dtOutput</mca:CSharpValue>
+                            </InArgument>
+                          </ui:AddDataColumn.DataTable>
+                        </ui:AddDataColumn>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="1725, 673, 47, 45" ElementType="Text" FriendlyName="'3'" FullSelectorArgument="&lt;webctrl aaname='3' parentid='tableSandbox_paginate' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3' parentid='tableSandbox_paginate' tag='A' type='' class='paginate_button current' check:innerText='3' /&gt;" Guid="7fcd76ca-dfdc-4de8-815a-66d46e408b93" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAxCAYAAAB3aZEhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKgSURBVGhD7ZpNaxNRFIb9T7MKlBYFQaSLpAt1owtXEqFVKLqxUF2YgtAWFx1QdyVIRGyoWiKxxVg0LsSFFrWLdJI0ydRk0nyTjyZ5nVNNaMrctE4SzDEeeHiZe8+F8zCTCYScwD9U/2X6tZoyyWQSbrcbsiyzgealuRvVlKGNjY2N31c8iualuRvVlCHTer3epFarsbimuRvVIkMN3BDKVKtVdrSV2dvbY5VCmUqlwo7BkCmXyyiVSi3Z4PB6v+wLZaiBG0KZYrHIjsGQKRQK7BgMmXw+z462MrlcrjuZDuHtw5u4dEqCJEkYsV2H/CZ8/PPHTKFMNpvtEhr898Z0iTFce7AE39oSHt24AItkgd21adBvnt7LfFrAqH437K7ggXUN3jsWSENz8B/s7RChTCaTQTqd7jiV5SmcP3MLL6Kt6x/lUf1uzcB/xPk/SaEMNfSEZBzfV2dxcUiCbf494kY9JhHKpFKprhN4bN9/ARCnp54joBn3maWtzO7ublfz67tlrL32wDk3AZsuZLnqxDdd6Ljnj0qhDP3S0UtUz239jSZh4mnIcN8Mf00mGV+Fgx65mXXjfRMIZTRNQyKR6DjXZRtGzt7Hhx+H9mMrmKZHbXbd8JyZFMpQQzdQnk3qH3gLpleiLetfnFf2vzinX7Wud4JQJh6Pdwf1Mxbt9AV5DpMLLng9L7HouIxh/a5YHT5EjM6YpPcyhLoJ7/w4rCd/vZaHreO4+8QPRTXo7QChzM7ODjsGQ0ZVVXa0lYnFYqxSKBONRtkxGDKRSATb29usUihDDdwQyoTDYXa0lQmFQqxSKBMMBtkxGDKKomBra4tVCmWogRtCmUAgwA5DGfqng8/nMzzQr9C8hv/QoB8HaINMuUDz0tyNasrwL+AnPkQulqrib68AAAAASUVORK5CYII=" InformativeScreenshot="a2601ee965ef8812bb94fc2d435afa5c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">condition</mca:CSharpValue>
+              </ui:InterruptibleDoWhile.Condition>
+            </ui:InterruptibleDoWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAASdAAAEnQB3mYfeAAAAtRJREFUWEfllj9IalEcx83NHBShINucRAijLQiXttAgSHBwEIeGxFqqqaVNJyFIBQeJhghCRNFBBF20moIGBy1CMAgU+kNDKnLeO9ffPfce77npfdfHG94HfuD5/n7ne75e9V416B+jKsDd3R3SaDRc1Wo1UJWhKoBOpyMBFhcXQVWGqgDLy8skgMPhAFUZqgI8Pz9zh29vb4OiHFUBQqEQF0ANqnZbrVa0trYGqz9DcYBOp4MKhQK6vr7m3r3L5UKXl5eoVCqhr68vmJqciQLc3NygjY0N8oUbVx6PB9Xrddj9Mz8GaLVayGQyMQ/BpdVqmTpf+CP6/v4GNzayAWKxmMQwEAigarUKE1KKxSLyer2SfViXgxng9PSUMohEItCZnIODA8pDLoQkQKPRoDb2ej3oKKfZbI71kgQQ315HeXx8RKlUClZSkskkent7g9WQl5cX4reysgKqAHVKuVwmw+fn56AK8L1MJgOKwMnJCemPcnh4SHrtdhvUIdT05uamrAm+fHwvHo+DKhAMBmX3Yvje0dERKEOo6ZmZGW5ofX0dFIF+v09MEokEqAL7+/ukz8JsNnM9m80GyhBqmjcYTYnpdrukH41GQRXY3d0lfRZyV5esXl9fycDZ2RmoNHz//v4eFIGLiwuuZzQaQaHZ29sj+8WQ1e3tLRkIh8OgSvn8/IRXUvCbkMPn8xH/9/d3UEUBcrkcGVhYWAB1evDeuJ6enkAVBcjn89SQ0+mEjnqWlpYob2aAh4cHaogvv9/Phfv4+IDJ8eDfOr5hud1upudgMIBJUQAMa5hVer0ezc/Pc39Ecc3NzVF30HElhlptbW0xN0yzjo+P4bQhdJzfsDZNq/CVG0USAIMvKctATdntdnCnYQbApNNpZLFYmGZKCj8BK5UKuEqRDSDm6uoK7ezscGazs7PMg3AZDAa0urrKPRey2Szs/pmJAvxN/vcACP0CD7ydk7gYAkEAAAAASUVORK5CYII=" InformativeScreenshot="b890eda294efb86c6822b716d436a11a.png" Selector="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" Url="https://rpachallengeocr.azurewebsites.net/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
